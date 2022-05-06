@@ -96,6 +96,7 @@ const TextInput = forwardRef(
       suggestions,
       textAlign,
       value: valueProp,
+      suggestionsProps,
       ...rest
     },
     ref,
@@ -386,6 +387,7 @@ const TextInput = forwardRef(
                             ? () => setActiveSuggestionIndex(index)
                             : undefined
                         }
+                        {...suggestionsProps}
                       >
                         {child}
                       </Button>

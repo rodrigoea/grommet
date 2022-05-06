@@ -6,6 +6,7 @@ import {
   TextAlignType,
 } from '../../utils';
 import { DropProps } from '../Drop';
+import { ButtonProps } from '../Button';
 
 export interface TextInputProps
   extends Omit<
@@ -48,6 +49,7 @@ export interface TextInputProps
   reverse?: boolean;
   size?: 'small' | 'medium' | 'large' | 'xlarge' | string;
   suggestions?: ({ label?: React.ReactNode; value?: any } | string)[];
+  suggestionsProps?: ButtonProps;
   textAlign?: TextAlignType;
   value?: string | number;
 }
